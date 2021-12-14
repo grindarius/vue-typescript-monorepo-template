@@ -1,49 +1,29 @@
 {
   "compilerOptions": {
-    // Project
-    "declaration": true,
-    "declarationMap": true,
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "lib": [
-      "ESNext",
-      "DOM"
+      "esnext",
+      "dom"
     ],
     "baseUrl": ".",
-    "removeComments": true,
-    "sourceMap": true,
-    "target": "ES2015",
-    "module": "CommonJS",
-    // Module resolution
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "moduleResolution": "Node",
-    // Linting
-    "alwaysStrict": true,
-    "strict": true /* includes: strictNullChecks, strictBindCallApply, strictFunctionTypes, strictPropertyInitialization, noImplicitAny, noImplicitThis */,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    // Experimental
-    "experimentalDecorators": true,
-    // Advanced
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "assumeChangesOnlyAffectDirectDependencies": true,
-    "forceConsistentCasingInFileNames": true,
-    "noErrorTruncation": true,
-    "pretty": true,
-    "resolveJsonModule": true,
-    "useDefineForClassFields": true,
     "paths": {
-      "@fina/common": [
-        "common/dist/*"
-      ]
-    }
+      "@monorepo-template/*": ["packages/*/src"]
+    },
+    "declaration": true,
+    "declarationMap": true,
+    "pretty": true,
   },
   "exclude": [
-    "node_modules",
-    "dist",
-    "lib",
+    "node_modules/",
+    "dist/",
+    "lib/",
     ".*/**"
   ]
 }
