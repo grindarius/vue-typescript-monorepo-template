@@ -9,6 +9,7 @@
     "dev": "node dist/index.js"
   },
   "dependencies": {
+    "@monorepo-template/common": "*",
     "dotenv": "^10.0.0",
     "fastify": "^3.24.1",
     "fastify-autoload": "^3.9.0",
